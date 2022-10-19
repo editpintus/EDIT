@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,500&display=swap');
+
+html, body {  
+    background-color: #E4EDFA;
+    font-family: 'Open Sans', sans-serif;  
+}
+
+/* para screen, entre 0 e o maximo width de 768px*/
+@media screen and (min-width:768px) {
+    .header{
+        position: relative;
+        display: flex;
+        border-bottom: 1px solid black;
+        margin-bottom: 8px;
+    }    
+    .card{
+        display:'flex'
+     }
+
+     .container{
+        display: flex;
+        flex-direction: row;
+     }
+ }
+
+/* media query a utilizar em mobile */
+@media screen and (max-width: 576px){
+    .header{
+        position: relative;
+        display: flex;
+        border-bottom: 1px solid black;
+        margin-bottom: 8px;
+    }
+    .container{
+        gap: 20px;
+        position: relative;
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+    .card{
+        background-color: transparent;
+        flex-direction: row;
+        position: relative;
+        display: flex;
+        
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    .laptop{
+        border-radius: 16px 0px 0px 16px;
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: flex;
+        background-color: #356adfa4
+        
+    }
+
+    .textContainer{
+        border-radius: 0px 16px 16px 0px;
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+        display: flex;
+        position: relative;
+        background-color: white;
+        font-size: 10px;
+    }
+
+    .text{
+        
+    }
+
+    .laptopImg{
+        width: 100;
+    }
+
+    .headerInfo{
+        margin: 4px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}

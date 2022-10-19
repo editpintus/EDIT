@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final HTML</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+
+  <style>
+    nav {
+      width: '100%';
+      display: grid;
+    }
+
+    body {
+      font-family: 'Archivo', sans-serif;
+    }
+
+    h2 {
+      color: #fedd02;
+    }
+
+    button {
+      background-color: #09a47a;
+      border: 0;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .buttonServiços {
+      background-color: #07d6a0;
+      font: 'color:white;';
+      border-radius: 5px;
+    }
+
+    .headMenuButton {
+      display: flex;
+    }
+
+    .headPaginas {
+      flex-direction: 'row';
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      margin: 2px;
+      width: 150px;
+      height: 75px;
+    }
+
+    .headMenu {
+      display: flex;
+      column-gap: 5px;
+      align-items: flex-start;
+      margin: 4px;
+      align-content: center;
+    }
+
+    .headMenuButton {
+      display: flex;
+      column-gap: 5px;
+    }
+    .headButton {
+      margin: 4;
+    }
+    .sectionBody {
+      display: flex;
+      align-items: flex-start;
+    }
+    .sectionPart {
+      width: 50%;
+    }
+    .serviços {
+      display: grid;
+      direction: 'column';
+      justify-content: 'flex-start';
+      align-items: 'center';
+    }
+  </style>
+
+  <body>
+    <!--  Mostra-me aqui as tuas páginas amarelas -->
+    <!-- Lembra-te que a semantica importa.
+        Cabeça, Tronco e Membros aka nav, main, section, etc...
+    -->
+    <!-- nav -->
+    <nav>
+      <div class="headPaginas">
+        <div class="logo">
+          <img src="assets/850.svg" alt="Logo" />
+        </div>
+
+        <div class="headMenu">
+          <div class="headMenuButton">
+            <a href="">Empresas</a>
+            <a href="">Serviços</a>
+            <a href="">Soluções</a>
+            <a href="">Blog</a>
+            <a href="">Contactos</a>
+          </div>
+
+          <div class="headButton">
+            <button type="button" class="buttonServiços">
+              Páginas Amarelas MarketPlace
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- corpo -->
+    <div>
+      <div>
+        <h2>SOBRE NÓS</h2>
+        <p>
+          Estamos no mercado há mais de sessenta anos e temos a experiência e o
+          know-how necessários para desenvolver e implementar soluções que
+          acrescem valor a qualquer empresa, independentemente do volume e da
+          área de atividade. A nossa equipa de especialistas está focada no
+          sucesso dos nossos clientes, ajudando-os a identificar oportunidades
+          de negócio e a explorar todas as vertentes do marketing digital para
+          que a estratégia online seja sólida e eficaz.
+        </p>
+      </div>
+      <div class="sectionBody">
+        <div class="sectionPart">
+          <h3 id="missao">Missão</h3>
+          <ul id="missao">
+            <li>Democratizamos o marketing digital;</li>
+            <li>Aproximamos Empresas e Consumidor, em todo o mundo</li>
+            <li>Formamos digital experts para serem referência no mercado</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 id="visao">Visão</h3>
+          <ul id="visao">
+            <li>
+              Ser o melhor aliado das empresas na ampliação dos seus negócios
+            </li>
+            <li>
+              Ser top of mind na procura de serviços e produtos, acrescentando
+              velocidade e valor;
+            </li>
+            <li>Ser a escola de Vendas & Marketing Digital em Portugal.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="serviços">
+        <h2>SERVIÇOS</h2>
+        <div>
+          <button>SERVIÇOS</button>
+          <button>WEBSITE & ADDONS</button>
+          <button>REDES SOCIbuttonIS</button>
+          <button>PUBLICIDADE ONLINE</button>
+          <button>GEO MARKETING</button>
+          <button>FOTOGRAFIA</button>
+          <button>VÍDEO</button>
+          <button>IDENTIDADE VISUAL</button>
+          <button>OFFICE 365</button>
+          <button>MARKETPLACE</button>
+        </div>
+
+        <button type="submit" class="buttonServiços">
+          SABER MAIS SOBRE ESTE SERVIÇO
+        </button>
+      </div>
+
+      <div>
+        <h2>CONTACTOS</h2>
+        <h3>Estamos aqui para ajudar, fale connosco! :)</h3>
+        <p>
+          Ligue para
+          <strong>808 210 220</strong>
+          . Segunda a Sexta das 9h às 13h e das 14h às 18h.
+        </p>
+
+        <p>
+          Ou envie um e-mail para
+          <a href="">pa@paginasamarelas.pt</a>
+        </p>
+
+        <h3>Envie-nos uma mensagem:</h3>
+        <div style="display: grid; justify-content: flex-start;">
+          <input type="text" placeholder="Name*" />
+          <input type="text" placeholder="Telefone*" />
+          <input type="email" placeholder="Mail*" />
+          <select>
+            <option value="Carpinteiros" selected>Carpinteiros</option>
+          </select>
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Excreve aqui a sua mensagem!"
+          ></textarea>
+          <label id="radio1">
+            Quero receber comunicações da Páginas Amarelas
+          </label>
+          <input id="radio1" type="radio" />
+          <label id="radio2">
+            Li e concordo com a Política de Privacidade da Páginas Amarelas
+          </label>
+          <input id="radio2" type="radio" />
+          <button type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- corpo -->
+    <!-- envia mensagem -->
+    <!-- contactos -->
+  </body>
+</html>

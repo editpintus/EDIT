@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Forms</title>
+  </head>
+  <body>
+    <div style="display: grid; justify-content: center; align-items: center;">
+      <div
+        style="
+          border: 2px solid;
+          width: 260px;
+          display: grid;
+          justify-content: center;
+          margin: 4px;
+        "
+      >
+        <div>
+          <label id="first">First Name</label>
+          <input type="text" placeholder="First Name" id="first" />
+        </div>
+
+        <div>
+          <label id="last">Last Name</label>
+          <input type="text" id="last" placeholder="Last Name" />
+        </div>
+
+        <div>
+          <label id="age">Age</label>
+          <input type="number" id="age" placeholder="Age" />
+        </div>
+
+        <div>
+          <label id="first">Date of Birth</label>
+          <input type="date" placeholder="Date of Birth" id="date" />
+        </div>
+
+        <div>
+          <label id="Country">Country</label>
+          <select id="Country">
+            <option disabled selected hidden>Choose Country</option>
+            <option>Portugal</option>
+            <option>Japan</option>
+            <option>Maxico</option>
+            <option>USA</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="vertical-align: top;" id="textarea">comments</label>
+          <textarea
+            style="border: 50; border-color: blue;"
+            cols="10"
+            rows="10"
+            placeholder="Fill your comments"
+            id="textarea"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

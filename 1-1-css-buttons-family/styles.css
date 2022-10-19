@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.buttons__wrapper {
+    width: 700px;
+    margin: 16px auto;
+}
+
+.d-flex {
+    display: flex;
+    gap: 12px;
+}
+ 
+button{
+    color: white;
+    border: 0px;
+    font-size: large;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.small{
+    color: white;
+    border: 0px;
+    font-size: large;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.outline{
+    background-color: transparent;
+    border: 0px;
+    font-size: large;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.grey{border: 2px solid; color: gainsboro;}
+.blue{border: 2px solid;color: #1652F0;}
+.green{border: 2px solid;color: #14cf3c;}
+.orange{border: 2px solid;color: #dbac2d;}
+.red{border: 2px solid;color: #cf1414;}
+
+
+.colorBlue{
+    background-color: #1652F0;
+}
+
+.colorGreen{
+    background-color: #14cf3c;
+}
+
+.colorRed{
+    background-color: #cf1414;
+}
+
+.colorOrange{
+    background-color: #dbac2d;
+}
+
+.colorGray{
+    background-color: gainsboro;
+}
+
+.back{background: linear-gradient(90deg, rgba(222,222,222,0.7063200280112045) 0%, rgba(22,82,240,1) 25%, rgba(20,207,60,1) 50%, rgba(219,172,43,1) 75%, rgba(207,20,20,1) 100%);}
